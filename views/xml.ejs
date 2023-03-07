@@ -1,0 +1,23 @@
+<html><body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form method="get" action="/xml">
+    <label for="url">XML URL:</label>
+    <input type="text" name="url">
+    <input type="submit" name=""/>
+    </form>
+    <% if(data != ''){ %>
+    <div >
+    <% data.CATALOG.PLANT.forEach(function(PLANT){ %>
+    <div class="container-fluid clear">
+    <h2><%= PLANT.COMMON %></h2>
+    <div>Scientific name: <%- PLANT.BOTANICAL %></div>
+    <div>Zone: <%- PLANT.ZONE %></div>
+    <div>Light: <%- PLANT.LIGHT %></div>
+    <div>Price: <%- PLANT.PRICE %></div>
+    <div>Availability: <%- PLANT.AVAILABILITY %></div>
+    </div>
+    <% }); %>
+    </div>
+    <% } %>
+    </body></html>
