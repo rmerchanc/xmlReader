@@ -2,16 +2,16 @@
 ## Descripción
 App en node.js que procesa un XML de plantas y lo muestra en una página.
 ## Ejecución
-En el terminal:
++ En el terminal:
 ~~~
 npm install
 ~~~
 ~~~
 npm start
 ~~~
-En el navegador: 
++ En el navegador: 
 ~~~
 localhost:3000/xml
 ~~~
-Introducir la URL del siguiente XMl:
+Introducir la URL del siguiente XML en el cuadro de texto:
 https://www.w3schools.com/xml/plant_catalog.xml
